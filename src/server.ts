@@ -1,7 +1,4 @@
-import moment from "moment";
+import dotenv from "dotenv";
+dotenv.config();
 
-const port = 3000;
-
-console.log("Burak backend server started");
-console.log(`Current time: ${moment().format("YYYY-MM-DD HH:mm:ss")}`);
-console.log(`Server listening on port ${port}`);
+console.log("port", process.env.PORT);
