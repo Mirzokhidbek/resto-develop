@@ -9,10 +9,10 @@ res.send("Home Page")
     console.log('Error, goHome',err)
 }
     res.send("Home Page")
-}sss
+}
 
 
- ccx
+
 memberController.getLogin=(req:Request, res:Response)=>{
 try{
 res.send("Login Page")
