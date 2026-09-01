@@ -1,0 +1,34 @@
+import {T} from "../libs/types/common"
+import  {Request, Response} from "express"
+
+const memberController: T ={}
+memberController.goHome=(req:Request, res:Response)=>{
+try{
+res.send("Home Page")
+} catch(err){
+    console.log('Error, goHome',err)
+}
+    res.send("Home Page")
+}sss
+
+
+ ccx
+memberController.getLogin=(req:Request, res:Response)=>{
+try{
+res.send("Login Page")
+} catch(err){
+    console.log('Error, goHome',err)
+}
+    res.send("Home Page")
+}
+
+memberController.Signup=(req:Request, res:Response)=>{
+try{
+res.send("Signup Page")
+} catch(err){
+    console.log('Error, goHome',err)
+}
+    res.send("Home Page")
+}
+
+
