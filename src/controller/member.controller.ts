@@ -2,6 +2,7 @@ import {T} from "../libs/types/common"
 import  {Request, Response} from "express"
 
 const memberController: T ={}
+
 memberController.goHome=(req:Request, res:Response)=>{
 try{
 res.send("Home Page")
@@ -10,9 +11,6 @@ res.send("Home Page")
 }
     res.send("Home Page")
 }
-
-
-
 memberController.getLogin=(req:Request, res:Response)=>{
 try{
 res.send("Login Page")
@@ -22,7 +20,7 @@ res.send("Login Page")
     res.send("Home Page")
 }
 
-memberController.Signup=(req:Request, res:Response)=>{
+memberController.getSignup=(req:Request, res:Response)=>{
 try{
 res.send("Signup Page")
 } catch(err){
@@ -30,5 +28,4 @@ res.send("Signup Page")
 }
     res.send("Home Page")
 }
-
-
+export default memberController;
